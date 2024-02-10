@@ -9,9 +9,10 @@ html {
     color: #555;
   }
 
-  .logo {
-    width: 200px;
-    height: 200px;
+  #logo {
+    height: 15vh;
+    width: auto;
+    float: left;
   }
   
   /* from Bulma */
@@ -28,7 +29,8 @@ html {
   }
   
   .main-logo-link {
-    width: fit-content;
+    display: block;
+    width: 250px;
   }
   
   .shop-now-button {
