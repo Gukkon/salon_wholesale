@@ -8,6 +8,11 @@ html {
     height: calc(100vh - 164px);
     color: #555;
   }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
   
   /* from Bulma */
   .icon {
