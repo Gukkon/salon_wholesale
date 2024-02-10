@@ -3,17 +3,12 @@ html {
   }
   
   body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background-image: url("shopping-beauty-products.webp") no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
   }
 
-  #logo {
-    height: 15vh;
-    width: auto;
-    float: left;
-  }
   
   /* from Bulma */
   .icon {
@@ -24,13 +19,18 @@ html {
     width: 1.5rem;
   }
   
+  #logo {
+    height: 15vh;
+    width: auto;
+    float: left;
+  }
+
   .logo-font {
     text-transform: uppercase;
   }
   
   .main-logo-link {
-    display: block;
-    width: 250px;
+    width: fit-content;
   }
   
   .shop-now-button {
