@@ -1,0 +1,14 @@
+[
+    {"pk": 1, "model": "products.category", "fields": {"name": "shampoo_conditioner ", "friendly_name": "Shampoo & Conditioner"}},
+    {"pk": 2, "model": "products.category", "fields": {"name": "hair_colouring", "friendly_name": "Hair Colouring"}},
+    {"pk": 3, "model": "products.category", "fields": {"name": "hair_loss_treatment", "friendly_name": "Hair Loss Treatment"}}, 
+    {"pk": 4, "model": "products.category", "fields": {"name": "lotions_moisturisers", "friendly_name": "Lotions & Moisturisers"}}, 
+    {"pk": 5, "model": "products.category", "fields": {"name": "body_powder", "friendly_name": "Body Powder"}},
+    {"pk": 6, "model": "products.category", "fields": {"name": "baby_oil", "friendly_name": "Baby Oil"}},
+    {"pk": 7, "model": "products.category", "fields": {"name": "hand_sanitisers", "friendly_name": "Hand Sanitisers"}},
+    {"pk": 8, "model": "products.category", "fields": {"name": "bar_soap", "friendly_name": "Bar Soap"}},
+    {"pk": 9, "model": "products.category", "fields": {"name": "nail_polish", "friendly_name": "Nail Polish"}},
+    {"pk": 10, "model": "products.category", "fields": {"name": "nail_polish_remover", "friendly_name": "Nail Polish Remover"}},
+    {"pk": 11, "model": "products.category", "fields": {"name": "false_nails", "friendly_name": "False Nails"}}
+
+]

@@ -1,0 +1,13 @@
+{"pk": 1, 
+"model": "products.product",
+"fields": {
+    "sku": "nail1",
+    "name": "Ardell Nail Addict Natural Style Articial Nails",
+    "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+    "price": 53.99,
+    "category": 9,
+    "rating": 4.6,
+    "image_url": "Ardell Nail",
+    "image": "Ardell Nail Addict"
+    }
+}
