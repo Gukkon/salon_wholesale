@@ -1,13 +1,801 @@
-{"pk": 1, 
-"model": "products.product",
-"fields": {
-    "sku": "nail1",
-    "name": "Ardell Nail Addict Natural Style Articial Nails",
-    "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-    "price": 53.99,
-    "category": 9,
-    "rating": 4.6,
-    "image_url": "Ardell Nail",
-    "image": "Ardell Nail Addict"
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "ARDNAIL01",
+        "name": "Ardell Nail Addict Natural Style Artificial Nails",
+        "description": "Salon Quality Nail Tips for Home - Natural Squared",
+        "price": 9.99,
+        "category": "11",
+        "rating": 4.5,
+        "image_url": "/media/Ardell_Nail_Addict_Natural_Style_Artificial_Nails_Salon_Quality_Nail_Tips_for_Home_Natural_Squared.avif",
+        "image": "Ardell Nail Addict Natural Style Artificial Nails Salon Quality Nail Tips for Home Natural Squared.avif"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "BETNAIL02",
+        "name": "Beter Nail Care Cream Nail Polish Remover 50ml",
+        "description": "",
+        "price": 5.49,
+        "category": "10",
+        "rating": 4.2,
+        "image_url": "/media/Beter_Nail_Care_Cream_Nail_Polish_Remover_50ml.avif",
+        "image": "Beter Nail Care Cream Nail Polish Remover 50ml.avif"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "BIOTHRM03",
+        "name": "Biotherm Life Plankton Multi-Corrective Body Oil 125ml",
+        "description": "",
+        "price": 29.99,
+        "category": "6",
+        "rating": 4.8,
+        "image_url": "/media/Biotherm_Life_Plankton_Multi-Corrective_Body_Oil_125ml.jpg",
+        "image": "Biotherm Life Plankton Multi-Corrective Body Oil 125ml.jpg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "BOURJN04",
+        "name": "Bourjois Acetone-Free Nail Polish Remover for Women",
+        "description": "",
+        "price": 3.99,
+        "category": "10",
+        "rating": 4.0,
+        "image_url": "/media/Bourjois_Acetone-Free_Nail_Polish_Remover_for_Women.avif",
+        "image": "Bourjois Acetone-Free Nail Polish Remover for Women.avif"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "CALVINK05",
+        "name": "Calvin Klein Eternity Hair And Body Wash For Men 200ml",
+        "description": "",
+        "price": 19.99,
+        "category": "1",
+        "rating": 4.5,
+        "image_url": "/media/Calvin_Klein_Eternity_Hair_And_Body_Wash_For_Men_200ml.avif",
+        "image": "Calvin Klein Eternity Hair And Body Wash For Men 200ml.avif"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "WELEDA04",
+        "name": "Cellulite Oil Weleda Birch 200ml",
+        "description": "",
+        "price": 15.99,
+        "category": "6",
+        "rating": 4.2,
+        "image_url": "/media/Cellulite_Oil_Weleda_Birch_200ml.jpg",
+        "image": "Cellulite Oil Weleda Birch 200ml.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "CERAVE01",
+        "name": "CeraVe SA Smoothing Cream for Rough and Bumpy Skin with Salicylic Acid and 3 Essential Ceramides 177ml",
+        "description": "",
+        "price": 12.49,
+        "category": "6",
+        "rating": 4.7,
+        "image_url": "/media/CeraVe_SA_Smoothing_Cream_for_Rough_and_Bumpy_Skin_with_Salicylic_Acid_and_3_Essential_Ceramides_177ml.jpg",
+        "image": "CeraVe SA Smoothing Cream for Rough and Bumpy Skin with Salicylic Acid and 3 Essential Ceramides 177ml.jpg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "CHLONOM01",
+        "name": "Chloe Nomade Body Lotion 200ml",
+        "description": "",
+        "price": 24.99,
+        "category": "4",
+        "rating": 4.6,
+        "image_url": "/media/ChloeNomadeBodyLotion200ml.jpg",
+        "image": "ChloeNomadeBodyLotion200ml.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "CLINQBP01",
+        "name": "Clinique Blended Face Powder Transparency No.03 35g",
+        "description": "",
+        "price": 22.99,
+        "category": "5",
+        "rating": 4.3,
+        "image_url": "/media/CliniqueBlendedFacePowderTransparencyNo.0335g.jpg",
+        "image": "CliniqueBlendedFacePowderTransparencyNo.0335g.jpg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "CLINQEC01",
+        "name": "Clinque Eye Cream 15ml",
+        "description": "",
+        "price": 29.99,
+        "category": "4",
+        "rating": 4.4,
+        "image_url": "/media/ClinqueEyeCream15ml.jpg",
+        "image": "ClinqueEyeCream15ml.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "COLLPO01",
+        "name": "Collistar Perfect Body Firming Shower Oil 400ml",
+        "description": "",
+        "price": 17.99,
+        "category": "6",
+        "rating": 4.8,
+        "image_url": "/media/Collistar_Perfect_Body_Firming_Shower_Oil_400ml.jpg",
+        "image": "Collistar Perfect Body Firming Shower Oil 400ml.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "COLLSU02",
+        "name": "Collistar Sublime Melting Milk Fast Absorbing Body Cream with Shea Butter and Jojoba Oil for Smooth and Radiant Skin 400ml",
+        "description": "",
+        "price": 21.99,
+        "category": "4",
+        "rating": 4.7,
+        "image_url": "/media/Collistar_Sublime_Melting_Milk_Fast_Absorbing_Body_Cream_with_Shea_Butter_and_Jojoba_Oil_for_smooth_and_Radiant_Skin_400ml.avif",
+        "image": "Collistar Sublime Melting Milk Fast Absorbing Body Cream with Shea Butter and Jojoba Oil for smooth and Radiant Skin 400ml.avif"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "ELEGAN01",
+        "name": "Elegant Touch Bare Nails Stiletto",
+        "description": "",
+        "price": 8.99,
+        "category": "9",
+        "rating": 4.6,
+        "image_url": "/media/Elegant_Touch_Bare_Nails_Stiletto.avif",
+        "image": "Elegant Touch Bare Nails Stiletto.avif"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "ELEGTO02",
+        "name": "Elegant Touch Core Colour Nails Quite White 24 Count",
+        "description": "",
+        "price": 6.99,
+        "category": "9",
+        "rating": 4.3,
+        "image_url": "/media/Elegant_Touch_Core_Colour_Nails_Quite_White_24_Count.avif",
+        "image": "Elegant Touch Core Colour Nails Quite White 24 Count.avif"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "ESTEELA03",
+        "name": "Estee Lauder Advanced Night Repair Serum Synchronized Multi-Recovery Complex 50ml",
+        "description": "",
+        "price": 99.99,
+        "category": "4",
+        "rating": 4.9,
+        "image_url": "/media/Estee_Lauder_Advanced_Night_Repair_Serum_Synchronized_Multi-Recovery_Complex_50ml.jpg",
+        "image": "Estee Lauder Advanced Night Repair Serum Synchronized Multi-Recovery Complex 50ml.jpg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "HERBIE04",
+        "name": "Herbier Revitalizing Body Oil 100ml",
+        "description": "",
+        "price": 14.99,
+        "category": "6",
+        "rating": 4.5,
+        "image_url": "/media/Herbier_Revitalizing_Body_Oil_100ml.jpg",
+        "image": "Herbier Revitalizing Body Oil 100ml.jpg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "KISSIMP01",
+        "name": "KISS imPRESS Press-On Manicure One More Chance Short Length Square with PureFit Technology - 30 Fake Nails",
+        "description": "",
+        "price": 12.49,
+        "category": "11",
+        "rating": 4.7,
+        "image_url": "/media/KISS_imPRESS_Press-On_Manicure_One_More_Chance_Short_Length_Square_with_PureFit_Technology_-_30_Fake_Nails.avif",
+        "image": "KISS imPRESS Press-On Manicure One More Chance Short Length Square with PureFit Technology - 30 Fake Nails.avif"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "KNEIPP01",
+        "name": "Kneipp Labial Vanilla Extra Care",
+        "description": "",
+        "price": 3.99,
+        "category": "4",
+        "rating": 4.1,
+        "image_url": "/media/Kneipp_Labial_Vanilla_Extra_Care.avif",
+        "image": "Kneipp Labial Vanilla Extra Care.avif"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "LOTUSFC02",
+        "name": "Lotus Flower and Acacia Milk Body Cream 300ml",
+        "description": "",
+        "price": 18.99,
+        "category": "4",
+        "rating": 4.6,
+        "image_url": "/media/Lotus_Flower_and_Acacia_Milk_Body_Cream_300ml.jpg",
+        "image": "Lotus Flower and Acacia Milk Body Cream 300ml.jpg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "MAVALA01",
+        "name": "Mavala Nail Polish Remover Blue 100ml",
+        "description": "",
+        "price": 4.99,
+        "category": "10",
+        "rating": 4.3,
+        "image_url": "/media/Mavala_Nail_Polish_Remover_Blue_100ml.avif",
+        "image": "Mavala Nail Polish Remover Blue 100ml.avif"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "MAXSPOT01",
+        "name": "Max Factor NailFinity Nail Polish Spotlight on Her 420 12ml",
+        "description": "",
+        "price": 7.99,
+        "category": "9",
+        "rating": 4.4,
+        "image_url": "/media/Max_Factor_NailFinity_Nail_Polish_Spotlight_on_Her_420_12ml.avif",
+        "image": "Max Factor NailFinity Nail Polish Spotlight on Her 420 12ml.avif"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "MAXVIP01",
+        "name": "Max Factor NailFinity Nail Polish Vip 340 12ml",
+        "description": "",
+        "price": 7.99,
+        "category": "9",
+        "rating": 4.3,
+        "image_url": "/media/Max_Factor_NailFinity_Nail_Polish_Vip_340_12ml.avif",
+        "image": "Max Factor NailFinity Nail Polish Vip 340 12ml.avif"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "MAYBEL01",
+        "name": "Maybelline New York Lasting Fix Loose Face Powder - 01 Translucent 6g",
+        "description": "",
+        "price": 8.99,
+        "category": "5",
+        "rating": 4.2,
+        "image_url": "/media/Maybelline_New_York_Lasting_Fix_Loose_Face_Powder_-_01_Translucent_6g.jpg",
+        "image": "MaybellineNewYorkLastingFixLooseFacePowder-01Translucent6g.jpg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "NIVEA01",
+        "name": "NIVEA Nutritive Body Milk 48H Deep Moisturizing Body Cream with Almond Oil 625ml",
+        "description": "",
+        "price": 15.99,
+        "category": "4",
+        "rating": 4.5,
+        "image_url": "/media/NIVEA_Nutritive_Body_Milk_48H_Deep_Moisturizing_Body_Cream_with_Almond_Oil_625ml.jpg",
+        "image": "NIVEA Nutritive Body Milk 48H Deep Moisturizing Body Cream with Almond Oil 625ml.jpg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "RIMMEL01",
+        "name": "Rimmel 60 Seconds Super Shine Nail Polish Flip Flop 406 8ml",
+        "description": "",
+        "price": 5.99,
+        "category": "9",
+        "rating": 4.2,
+        "image_url": "/media/Rimmel_60_Seconds_Super_Shine_Nail_Polish_Flip_Flop_406_8ml.avif",
+        "image": "Rimmel 60 Seconds Super Shine Nail Polish Flip Flop 406 8ml.avif"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "RIMMEL02",
+        "name": "Rimmel London Super Gel French Manicure Nail Polish 12ml 91 English Rose",
+        "description": "",
+        "price": 6.99,
+        "category": "9",
+        "rating": 4.4,
+        "image_url": "/media/Rimmel_London_Super_Gel_French_Manicure_Nail_Polish_12ml_91_English_Rose.avif",
+        "image": "Rimmel London Super Gel French Manicure Nail Polish 12ml 91 English Rose.avif"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "RIMMEL03",
+        "name": "Rimmel London Supergel Kate Nail Polish 024 Red Ginger 12ml",
+        "description": "",
+        "price": 6.99,
+        "category": "9",
+        "rating": 4.3,
+        "image_url": "/media/Rimmel_London_Supergel_Kate_Nail_Polish_024_Red_Ginger_12ml.avif",
+        "image": "Rimmel London Supergel Kate Nail Polish 024 Red Ginger 12ml.avif"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "ROGERG01",
+        "name": "Roger & Gallet Jean Marie Farina Individual Soaps in Gift Box 3 x 100g - Sealed",
+        "description": "",
+        "price": 14.99,
+        "category": "8",
+        "rating": 4.7,
+        "image_url": "/media/Roger_&_Gallet_Jean_Marie_Farina_Individual_Soaps_in_Gift_Box_3_x_100g_-_Sealed.avif",
+        "image": "Roger & Gallet Jean Marie Farina Individual Soaps in Gift Box 3 x 100g - Sealed.avif"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANYTO01",
+        "name": "Sanytol Antibacterial Kitchen Hand Soap 250ml",
+        "description": "",
+        "price": 3.49,
+        "category": "8",
+        "rating": 4.0,
+        "image_url": "/media/Sanytol_Antibacterial_Kitchen_Hand_Soap_250ml.avif",
+        "image": "Sanytol Antibacterial Kitchen Hand Soap 250ml.avif"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+        "sku": "SANYTL01",
+        "name": "Sanytol Laundry Sanitizer 500ml",
+        "description": "",
+        "price": 6.99,
+        "category": "7",
+        "rating": 4.1,
+        "image_url": "/media/Sanytol_Laundry_Sanitizer_500ml.avif",
+        "image": "Sanytol Laundry Sanitizer 500ml.avif"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+        "sku": "SENSAI01",
+        "name": "Sensai Translucent Loose Powder",
+        "description": "",
+        "price": 32.99,
+        "category": "5",
+        "rating": 4.6,
+        "image_url": "/media/SensaiTranslucentLoosePowder.jpg",
+        "image": "SensaiTranslucentLoosePowder.jpg"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+        "sku": "SESDE01",
+        "name": "Sesderma LACTYFERRIN Sanitizer Hand Sanitizing Gel 80ml",
+        "description": "",
+        "price": 4.49,
+        "category": "7",
+        "rating": 4.2,
+        "image_url": "/media/Sesderma_LACTYFERRIN_Sanitizer_Hand_Sanitizing_Gel_80ml.avif",
+        "image": "Sesderma LACTYFERRIN Sanitizer Hand Sanitizing Gel 80ml.avif"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+        "sku": "SOPHYR01",
+        "name": "Sophy Robson Nail-Its False Nails Red Half Moon 24 Press-On Nails",
+        "description": "",
+        "price": 9.99,
+        "category": "11",
+        "rating": 4.5,
+        "image_url": "/media/Sophy_Robson_Nail-Its_False_Nails_Red_Half_Moon_24_Press-On_Nails.avif",
+        "image": "Sophy Robson Nail-Its False Nails Red Half Moon 24 Press-On Nails.avif"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+        "sku": "SPANIS01",
+        "name": "Spanish Institute Aloe Vera Body 500ml",
+        "description": "",
+        "price": 14.99,
+        "category": "6",
+        "rating": 4.4,
+        "image_url": "/media/Spanish_Institute_Aloe_Vera_Body_500ml.avif",
+        "image": "Spanish Institute Aloe Vera Body 500ml.avif"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+        "sku": "TABACO01",
+        "name": "Tabac Soap 150g",
+        "description": "",
+        "price": 2.99,
+        "category": "7",
+        "rating": 4.1,
+        "image_url": "/media/Tabac_Soap_150g.avif",
+        "image": "Tabac Soap 150g.avif"
+      }
+    },
+    {
+      "pk": 36,
+      "model": "products.product",
+      "fields": {
+        "sku": "VITALP01",
+        "name": "Vital Perfection Uplifting and Firming Cream Enriched 50ml",
+        "description": "",
+        "price": 54.99,
+        "category": "4",
+        "rating": 4.8,
+        "image_url": "/media/VitalPerfectionUpliftingandFirmingCreamEnriched50ml.jpg",
+        "image": "VitalPerfectionUpliftingandFirmingCreamEnriched50ml.jpg"
+      }
+    },
+    {
+      "pk": 37,
+      "model": "products.product",
+      "fields": {
+        "sku": "WELEAR01",
+        "name": "WELEDA Aroma Relax Comforting Creamy Body Wash 200ml",
+        "description": "",
+        "price": 9.99,
+        "category": "4",
+        "rating": 4.4,
+        "image_url": "/media/WELEDA_Aroma_Relax_Comforting_Creamy_Body_Wash_200ml.avif",
+        "image": "WELEDA Aroma Relax Comforting Creamy Body Wash 200ml.avif"
+      }
+    },
+    {
+      "pk": 38,
+      "model": "products.product",
+      "fields": {
+        "sku": "WELECA01",
+        "name": "Weleda Calendula Soap 100g",
+        "description": "",
+        "price": 3.99,
+        "category": "7",
+        "rating": 4.3,
+        "image_url": "/media/Weleda_Calendula_Soap_100g.webp",
+        "image": "Weleda Calendula Soap 100g.webp"
+      }
+    },
+    {
+      "pk": 39,
+      "model": "products.product",
+      "fields": {
+        "sku": "WELERO01",
+        "name": "Weleda Wild Rose Body Oil 100ml",
+        "description": "",
+        "price": 19.99,
+        "category": "5",
+        "rating": 4.7,
+        "image_url": "/media/Weleda_Wild_Rose_Body_Oil_100ml.jpg",
+        "image": "Weleda Wild Rose Body Oil 100ml.jpg"
+      }
+    },
+    {
+      "pk": 40,
+      "model": "products.product",
+      "fields": {
+        "sku": "ZIAJAN01",
+        "name": "Ziaja Nuno Antibacterial Gel 200ml",
+        "description": "",
+        "price": 6.99,
+        "category": "7",
+        "rating": 4.2,
+        "image_url": "/media/Ziaja_Nuno_Antibacterial_Gel_200ml.avif",
+        "image": "Ziaja Nuno Antibacterial Gel 200ml.avif"
+      }
+    },
+    {
+      "pk": 41,
+      "model": "products.product",
+      "fields": {
+        "sku": "ESSENC01",
+        "name": "essence The Nail Polish Corrector Pen 4.5ml",
+        "description": "",
+        "price": 2.99,
+        "category": "11",
+        "rating": 4.0,
+        "image_url": "/media/essence_The_Nail_Polish_Corrector_Pen_4.5ml.avif",
+        "image": "essence The Nail Polish Corrector Pen 4.5ml.avif"
+      }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+        "sku": "ALFAM01",
+        "name": "Alfaparf Milano Semi di Lino Diamond Illuminating Low Shampoo 250ml",
+        "description": "",
+        "price": 19.99,
+        "category": "Beauty",
+        "rating": 4.5,
+        "image_url": "/media/Alfaparf_Milano_Semi_di_Lino_Diamond_Illuminating_Low_Shampoo_250ml.avif",
+        "image": "AlfaparfMilanoSemidiLinoDiamondIlluminatingLowShampoo250ml.avif"
     }
-}
+        },
+        {
+          "pk": 43,
+          "model": "products.product",
+          "fields": {
+            "sku": "ALPEC01",
+            "name": "Alpecin Medicinal Special Vitamin Hair Lotion 200ml",
+            "description": "",
+            "price": 15.99,
+            "category": "Beauty",
+            "rating": 4.3,
+            "image_url": "/media/Alpecin_Medicinal_Special_Vitamin_Hair_Lotion_200ml.avif",
+            "image": "AlpecinMedicinalSpecialVitaminHairLotion200ml.avif"
+          }
+        },
+        {
+          "pk": 44,
+          "model": "products.product",
+          "fields": {
+            "sku": "AMERI01",
+            "name": "American Crew Daily Deep Moisturizing Shampoo 250ml",
+            "description": "",
+            "price": 14.99,
+            "category": "Beauty",
+            "rating": 4.4,
+            "image_url": "/media/American_Crew_Daily_Deep_Moisturizing_Shampoo_250ml.avif",
+            "image": "AmericanCrewDailyDeepMoisturizingShampoo250ml.avif"
+          }
+        },
+        {
+          "pk": 45,
+          "model": "products.product",
+          "fields": {
+            "sku": "BATIST01",
+            "name": "Batiste Cherry Cheeky Cherry Dry Shampoo 200ml",
+            "description": "",
+            "price": 8.99,
+            "category": "Beauty",
+            "rating": 4.2,
+            "image_url": "/media/Batiste_Cherry_Cheeky_Cherry_Dry_Shampoo_200ml.avif",
+            "image": "BatisteCherryCheekyCherryDryShampoo200ml.avif"
+          }
+        },
+        {
+          "pk": 46,
+          "model": "products.product",
+          "fields": {
+            "sku": "GOLDW01",
+            "name": "Goldwell Dualsenses Bond Pro 60 Second Treatment 200ml",
+            "description": "",
+            "price": 21.99,
+            "category": "Beauty",
+            "rating": 4.5,
+            "image_url": "/media/Goldwell_Dualsenses_Bond_Pro_60_Second_Treatment_200ml.avif",
+            "image": "GoldwellDualsensesBondPro60SecondTreatment200ml.avif"
+          }
+        },
+        {
+          "pk": 47,
+          "model": "products.product",
+          "fields": {
+            "sku": "LOREA01",
+            "name": "L'Oreal 50ml Majirel Permanent Hair Colour Very Pale Blonde",
+            "description": "",
+            "price": 12.99,
+            "category": "Beauty",
+            "rating": 4.6,
+            "image_url": "/media/L'Oreal_50ml_Majirel_Permanent_Hair_Colour_Very_Pale_Blonde.jpg",
+            "image": "L'Oreal50mlMajirelPermanentHairColourVeryPaleBlonde.jpg"
+          }
+        },
+        {
+          "pk": 48,
+          "model": "products.product",
+          "fields": {
+            "sku": "LOREAP01",
+            "name": "L'Oreal Professionnel Multi-Benefit Leave-in Treatment with Resveratrol for Colored Hair 190ml",
+            "description": "",
+            "price": 17.99,
+            "category": "Beauty",
+            "rating": 4.7,
+            "image_url": "/media/L'Oreal_Professionnel_Multi-Benefit_Leave-in_Treatment_with_Resveratrol_for_Colored_Hair_190ml.avif",
+            "image": "L'OrealProfessionnelMulti-BenefitLeave-inTreatmentwithResveratrolforColoredHair190ml.avif"
+          }
+        },
+        {
+          "pk": 49,
+          "model": "products.product",
+          "fields": {
+            "sku": "LOREAS01",
+            "name": "L'Oréal Professionnel Serioxyl Advanced Density Activator Hair Growth Serum 90ml",
+            "description": "",
+            "price": 28.99,
+            "category": "Beauty",
+            "rating": 4.8,
+            "image_url": "/media/L'Oréal_Professionnel_Serioxyl_Advanced_Density_Activator_Hair_Growth_Serum_90ml.avif",
+            "image": "L'OréalProfessionnelSerioxylAdvancedDensityActivatorHairGrowthSerum90ml.avif"
+          }
+        },
+        {
+          "pk": 50,
+          "model": "products.product",
+          "fields": {
+            "sku": "MATRIX01",
+            "name": "Matrix So Silver Hair Mask for Blondes, Greys, and Silvers 200ml",
+            "description": "",
+            "price": 16.99,
+            "category": "Beauty",
+            "rating": 4.5,
+            "image_url": "/media/Matrix_So_Silver_Hair_Mask_for_Blondes_Greys_and_Silvers_200ml.avif",
+            "image": "MatrixSoSilverHairMaskforBlondesGreysandSilvers200ml.avif"
+          }
+        },
+        {
+          "pk": 51,
+          "model": "products.product",
+          "fields": {
+            "sku": "MATRIX02",
+            "name": "Matrix Total Results Mega Sleek Conditioner 300ml",
+            "description": "",
+            "price": 14.99,
+            "category": "Beauty",
+            "rating": 4.4,
+            "image_url": "/media/Matrix_Total_Results_Mega_Sleek_Conditioner_300ml.avif",
+            "image": "MatrixTotalResultsMegaSleekConditioner300ml.avif"
+          }
+        },
+        {
+          "pk": 52,
+          "model": "products.product",
+          "fields": {
+            "sku": "MOROC01",
+            "name": "Moroccanoil Scalp Treatment 45ml",
+            "description": "",
+            "price": 24.99,
+            "category": "Beauty",
+            "rating": 4.7,
+            "image_url": "/media/Moroccanoil_Scalp_Treatment_45ml.avif",
+            "image": "MoroccanoilScalpTreatment45ml.avif"
+          }
+        },
+        {
+          "pk": 53,
+          "model": "products.product",
+          "fields": {
+            "sku": "PARTS01",
+            "name": "Part System 6 Chemically Treated Hair with Progressed Thinning Scalp and Hair Treatment 100ml",
+            "description": "",
+            "price": 32.99,
+            "category": "Beauty",
+            "rating": 4.6,
+            "image_url": "/media/Part_System_6_Chemically_Treated_Hair_with_Progressed_Thinning_Scalp_and_Hair_Treatment_100ml.avif",
+            "image": "PartSystem6ChemicallyTreatedHairwithProgressedThinningScalpandHairTreatment100ml.avif"
+          }
+        },
+        {
+          "pk": 54,
+          "model": "products.product",
+          "fields": {
+            "sku": "OLAPL01",
+            "name": "Olaplex No.4 Clean Value Detox Dry Shampoo 250ml",
+            "description": "",
+            "price": 22.99,
+            "category": "Beauty",
+            "rating": 4.4,
+            "image_url": "/media/Olaplex_No.4_Clean_Value_Detox_Dry_Shampoo_250ml.avif",
+            "image": "Olaplexno.4cleanvalumedetoxdryshampoo250ml.avif"
+          }
+        },
+        {
+          "pk": 55,
+          "model": "products.product",
+          "fields": {
+            "sku": "REVLO01",
+            "name": "Revlon Colorsilk Hair Color Dark Brown 3N1 Count",
+            "description": "",
+            "price": 6.99,
+            "category": "Beauty",
+            "rating": 4.3,
+            "image_url": "/media/Revlon_Colorsilk_Hair_Color_Dark_Brown_3N1_Count.avif",
+            "image": "RevlonColorsilkHaircolorDarkBrown3N1Count.avif"
+          }
+        },
+        {
+          "pk": 56,
+          "model": "products.product",
+          "fields": {
+            "sku": "REVLO02",
+            "name": "Revlon Uniq One All-In-One Shampoo 490ml",
+            "description": "",
+            "price": 12.99,
+            "category": "Beauty",
+            "rating": 4.2,
+            "image_url": "/media/Revlon_Uniq_One_All-In-One_Shampoo_490ml.avif",
+            "image": "RevlonUniqOneAllInOneShampoo490ml.avif"
+          }
+        },
+        {
+          "pk": 57,
+          "model": "products.product",
+          "fields": {
+            "sku": "WELLA01",
+            "name": "Wella Professionals Color Fresh Semi-Permanent Hair Mask 150ml Pink",
+            "description": "",
+            "price": 15.99,
+            "category": "Beauty",
+            "rating": 4.7,
+            "image_url": "/media/Wella_Professionals_Color_Fresh_Semi-Permanent_Hair_Mask_150ml_Pink.avif",
+            "image": "WellaProfessionalsColorFreshSemi-PermanentHairMask150mlPink.avif"
+          }
+        }
+      ]      
+  
