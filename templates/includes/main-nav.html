@@ -29,10 +29,10 @@
                 Skincare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Lotions &amp; Moisturisers</a>
-                <a href="" class="dropdown-item">Body Powder</a>
-                <a href="" class="dropdown-item">Body Oil</a>
-                <a href="" class="dropdown-item">All Skincare</a>
+                <a href="{% url 'products' %}?category=lotions_moisturisers" class="dropdown-item">Lotions &amp; Moisturisers</a>
+                <a href="{% url 'products' %}?category=body_powder" class="dropdown-item">Body Powder</a>
+                <a href="{% url 'products' %}?category=body_oil" class="dropdown-item">Body Oil</a>
+                <a href="{% url 'products' %}?category=lotions_moisturisers, body_powder, body_oil" class="dropdown-item">All Skincare</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Bath &amp; Shower
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Hand Sanitisers</a>
-                <a href="" class="dropdown-item">Body Wash</a>
-                <a href="" class="dropdown-item">Bar Soap</a>
-                <a href="" class="dropdown-item">All Bath &amp; Shower</a>
+                <a href="{% url 'products' %}?category=hand_sanitisers" class="dropdown-item">Hand Sanitisers</a>
+                <a href="{% url 'products' %}?category=body_wash" class="dropdown-item">Body Wash</a>
+                <a href="{% url 'products' %}?category=bar_soap" class="dropdown-item">Bar Soap</a>
+                <a href="{% url 'products' %}?category=hand_sanitisers, body_wash, bar_soap" class="dropdown-item">All Bath &amp; Shower</a>
             </div>
         </li>
 
@@ -53,10 +53,10 @@
                 Nail Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Nail Polish</a>
-                <a href="" class="dropdown-item">Nail Polish Remover</a>
-                <a href="" class="dropdown-item">False Nails</a>
-                <a href="" class="dropdown-item">All Nail Care</a>
+                <a href="{% url 'products' %}?category=nail_polish" class="dropdown-item">Nail Polish</a>
+                <a href="{% url 'products' %}?category=nail_polish_remover" class="dropdown-item">Nail Polish Remover</a>
+                <a href="{% url 'products' %}?category=false_nails" class="dropdown-item">False Nails</a>
+                <a href="{% url 'products' %}?category=nail_polish, nail_polish_remover, false_nails" class="dropdown-item">All Nail Care</a>
             </div>
         </li>
 </div>
