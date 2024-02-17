@@ -17,10 +17,10 @@
                 Hair Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Shampoo &amp; Conditioner</a>
-                <a href="" class="dropdown-item">Hair Colouring</a>
-                <a href="" class="dropdown-item">Hair Loss Treatment</a>
-                <a href="" class="dropdown-item">All Hair Care</a>
+                <a href="{% url 'products' %}?category=shampoo_conditioner" class="dropdown-item">Shampoo &amp; Conditioner</a>
+                <a href="{% url 'products' %}?category=hair_colouring" class="dropdown-item">Hair Colouring</a>
+                <a href="{% url 'products' %}?category=hair_loss_treatment" class="dropdown-item">Hair Loss Treatment</a>
+                <a href="{% url 'products' %}?category=shampoo_conditioner, hair_colouring, hair_loss_treatment" class="dropdown-item">All Hair Care</a>
             </div>
         </li>
 
