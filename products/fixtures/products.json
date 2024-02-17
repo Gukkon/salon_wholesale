@@ -175,7 +175,7 @@
         "name": "Elegant Touch Bare Nails Stiletto",
         "description": "Transform your nails into a work of art with our vibrant and versatile nail polish collection. From timeless classics to trend-setting shades, our polish offers endless possibilities for expressing your unique style and personality.",
         "price": 8.99,
-        "category": "9",
+        "category": "11",
         "rating": 4.6,
         "image_url": "/media/Elegant_Touch_Bare_Nails_Stiletto.avif",
         "image": "Elegant Touch Bare Nails Stiletto.avif"
@@ -189,7 +189,7 @@
         "name": "Elegant Touch Core Colour Nails Quite White 24 Count",
         "description": "Transform your nails into a work of art with our vibrant and versatile nail polish collection. From timeless classics to trend-setting shades, our polish offers endless possibilities for expressing your unique style and personality.",
         "price": 6.99,
-        "category": "9",
+        "category": "11",
         "rating": 4.3,
         "image_url": "/media/Elegant_Touch_Core_Colour_Nails_Quite_White_24_Count.avif",
         "image": "Elegant Touch Core Colour Nails Quite White 24 Count.avif"
@@ -525,7 +525,7 @@
         "name": "Weleda Calendula Soap 100g",
         "description": "Keep your hands clean and protected on the go with our premium hand sanitizer. Formulated with 70% alcohol and enriched with moisturizing agents, our sanitizer effectively kills germs and bacteria while also hydrating and nourishing your skin. Its fast-drying, non-sticky formula ensures quick and convenient application, making it ideal for use anytime, anywhere. ",
         "price": 3.99,
-        "category": "7",
+        "category": "8",
         "rating": 4.3,
         "image_url": "/media/Weleda_Calendula_Soap_100g.webp",
         "image": "Weleda Calendula Soap 100g.webp"
