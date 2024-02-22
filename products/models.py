@@ -65,13 +65,13 @@ class ProductReview(models.Model):
     def __str__(self):
         return self.product.name
 
-    @receiver(post_save, sender=ProductReview)
-    def update_rating_on_save(sender, instance, created, **kwargs):
-        instance.product.rating = instance.product.get_rating()
-        instance.product.save()
+    # @receiver(post_save, sender=ProductReview)
+    # def update_rating_on_save(sender, instance, created, **kwargs):
+    #     instance.product.rating = instance.product.get_rating()
+    #     instance.product.save()
 
 
-    @receiver(post_delete, sender=ProductReview)
-    def update_rating_on_delete(sender, instance, *args, **kwargs):
-        instance.product.rating = instance.product.get_rating()
-        instance.product.save()
+    # @receiver(post_delete, sender=ProductReview)
+    # def update_rating_on_delete(sender, instance, *args, **kwargs):
+    #     instance.product.rating = instance.product.get_rating()
+    #     instance.product.save()
