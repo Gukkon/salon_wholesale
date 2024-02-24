@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Salon365 Confirmation for Order Number {{ order.order_number }}
