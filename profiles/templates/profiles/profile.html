@@ -72,7 +72,43 @@
                     </table>
                 </div>
             </div>
-        </dic>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">My Wishlist</div>
+        
+                        <div class="card-body">
+                            {% if wishlist.products.all %}
+                                <div class="row">
+                                    {% for product in wishlist.products.all %}
+                                        <div class="col-md-6 mb-4">
+                                            <div class="card">
+                                                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ product.name }}</h5>
+                                                    <p class="card-text">{{ product.description }}</p>
+                                                    <p class="card-text">Price: ${{ product.price }}</p>
+                                                    <form method="post" action="{% url 'wishlist' %}">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="remove_product_id" value="{{ product.id }}">
+                                                        <button type="submit" class="btn btn-danger">Remove from Wishlist</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                <p>Your wishlist is empty.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 {% endblock %}
 
 {% block postloadjs %}

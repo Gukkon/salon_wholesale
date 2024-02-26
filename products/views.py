@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Wishlist
 from .forms import ProductForm
 
 
@@ -58,6 +58,7 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
 
 
 def product_detail(request, product_id):
@@ -137,3 +138,23 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_wishlist(request):
+    if request.method == 'POST':
+        # Get the product ID from the form submission
+        product_id = request.POST.get('product_id')
+        if product_id:
+            # Get the product object
+            product = Product.objects.get(pk=product_id)
+            # Get or create the wishlist for the current user
+            wishlist, created = Wishlist.objects.get_or_create(user=request.user)
+            # Add the product to the wishlist
+            wishlist.products.add(product)
+            messages.success(request, f'Product "{product.name}" added to your wishlist.')
+            return redirect('product_detail', product_id=product_id)
+    
+    # If the request method is not POST or if product_id is not provided, redirect back
+    messages.error(request, 'Failed to add product to your wishlist.')
+    return redirect('home')  # You can change 'home' to the appropriate URL

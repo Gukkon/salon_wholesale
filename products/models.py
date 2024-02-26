@@ -40,38 +40,19 @@ class Product(models.Model):
         else:
             return None  # Return None if there are no reviews
 
-class ProductReview(models.Model):
-    """
-    A model for users to rate and reviews books, and for users
-    to see ratings and reviews from all other users
-    """
-    class Meta:
-        ordering = ['-date_added']
-
-    STAR_CHOICES = (
-        (5, '5'),
-        (4, '4'),
-        (3, '3'),
-        (2, '2'),
-        (1, '1'),
-    )
-
-    product = models.ForeignKey(Product, related_name="reviews", on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name="user_reviews", on_delete=models.CASCADE)
-    stars = models.IntegerField(choices=STAR_CHOICES)
-    content = models.TextField(blank=True, null=True, max_length=3000)
-    date_added = models.DateTimeField(auto_now_add=True)
+class Wishlist(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    products = models.ManyToManyField('products.Product', related_name='wishlists', blank=True)
 
     def __str__(self):
-        return self.product.name
-
-    # @receiver(post_save, sender=ProductReview)
-    # def update_rating_on_save(sender, instance, created, **kwargs):
-    #     instance.product.rating = instance.product.get_rating()
-    #     instance.product.save()
+        return f"Wishlist for {self.user.username}"
 
 
-    # @receiver(post_delete, sender=ProductReview)
-    # def update_rating_on_delete(sender, instance, *args, **kwargs):
-    #     instance.product.rating = instance.product.get_rating()
-    #     instance.product.save()
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.product.name} - {self.user.username}'

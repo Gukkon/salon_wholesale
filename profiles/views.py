@@ -5,14 +5,21 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
-
+from products.models import Wishlist
 
 @login_required
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
 
+    # Handling the wishlist functionality
+    try:
+        wishlist = Wishlist.objects.get(user=request.user)
+    except Wishlist.DoesNotExist:
+        wishlist = Wishlist.objects.create(user=request.user)
+
     if request.method == 'POST':
+        # If the form is submitted to update the profile
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
@@ -21,16 +28,53 @@ def profile(request):
             messages.error(request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
+
+        # If the form is submitted to add a product to the wishlist
+        product_id = request.POST.get('product_id')
+        if product_id:
+            product = Product.objects.get(pk=product_id)
+            wishlist.products.add(product)
+            messages.success(request, f'Product "{product.name}" added to your wishlist.')
+            return redirect('profile')  # Redirect back to the profile page
+
     orders = profile.orders.all()
 
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
+        'wishlist': wishlist,
         'on_profile_page': True
     }
 
     return render(request, template, context)
+
+
+
+# @login_required
+# def profile(request):
+#     """ Display the user's profile. """
+#     profile = get_object_or_404(UserProfile, user=request.user)
+
+#     if request.method == 'POST':
+#         form = UserProfileForm(request.POST, instance=profile)
+#         if form.is_valid():
+#             form.save()
+#             messages.success(request, 'Profile updated successfully')
+#         else:
+#             messages.error(request, 'Update failed. Please ensure the form is valid.')
+#     else:
+#         form = UserProfileForm(instance=profile)
+#     orders = profile.orders.all()
+
+#     template = 'profiles/profile.html'
+#     context = {
+#         'form': form,
+#         'orders': orders,
+#         'on_profile_page': True
+#     }
+
+#     return render(request, template, context)
 
 
 def order_history(request, order_number):
@@ -49,25 +93,28 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
-# @login_required
-# def wishlist(request):
-#     products = Product.objects.filter(users_wishlist=request.user)
 
-#     context = {
-#         'wishlist': products,
-#     }
-#     template = "profiles/user_wish_list.html"
-#     return render(request, template, context)
+@login_required
+def wishlist(request):
+    try:
+        wishlist = Wishlist.objects.get(user=request.user)
+    except Wishlist.DoesNotExist:
+        wishlist = Wishlist.objects.create(user=request.user)
 
+    if request.method == 'POST':
+        # Adding a product to the wishlist
+        product_id = request.POST.get('product_id')
+        if product_id:
+            product = Product.objects.get(pk=product_id)
+            wishlist.products.add(product)
 
-# @login_required
-# def add_to_wishlist(request, id):
-#     product = get_object_or_404(Product, id=id)
-#     if product.users_wishlist.filter(id=request.user.id).exists():
-#         product.users_wishlist.remove(request.user)
-#         messages.success(request, f"Removed {product.title} "
-#                          f"from your wishlist")
-#     else:
-#         product.users_wishlist.add(request.user)
-#         messages.success(request, f'Added {product.title} to your wishlist')
-#     return HttpResponseRedirect(request.META["HTTP_REFERER"])
+        # Removing a product from the wishlist
+        remove_product_id = request.POST.get('remove_product_id')
+        if remove_product_id:
+            product = Product.objects.get(pk=remove_product_id)
+            wishlist.products.remove(product)
+
+        return redirect('wishlist')
+
+    return render(request, 'wishlist.html', {'wishlist': wishlist})
+
