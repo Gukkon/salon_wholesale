@@ -1,11 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
-
-from checkout.models import Order
-from products.models import Wishlist
+from products.models import Product, Wishlist
 
 @login_required
 def profile(request):
@@ -26,9 +24,7 @@ def profile(request):
             messages.success(request, 'Profile updated successfully')
         else:
             messages.error(request, 'Update failed. Please ensure the form is valid.')
-    else:
-        form = UserProfileForm(instance=profile)
-
+        
         # If the form is submitted to add a product to the wishlist
         product_id = request.POST.get('product_id')
         if product_id:
@@ -36,6 +32,8 @@ def profile(request):
             wishlist.products.add(product)
             messages.success(request, f'Product "{product.name}" added to your wishlist.')
             return redirect('profile')  # Redirect back to the profile page
+    else:
+        form = UserProfileForm(instance=profile)
 
     orders = profile.orders.all()
 
@@ -48,6 +46,71 @@ def profile(request):
     }
 
     return render(request, template, context)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from django.shortcuts import render, get_object_or_404
+# from django.contrib import messages
+# from django.contrib.auth.decorators import login_required
+# from .models import UserProfile
+# from .forms import UserProfileForm
+
+# from checkout.models import Order
+# from products.models import Wishlist
+
+# @login_required
+# def profile(request):
+#     """ Display the user's profile. """
+#     profile = get_object_or_404(UserProfile, user=request.user)
+
+#     # Handling the wishlist functionality
+#     try:
+#         wishlist = Wishlist.objects.get(user=request.user)
+#     except Wishlist.DoesNotExist:
+#         wishlist = Wishlist.objects.create(user=request.user)
+
+#     if request.method == 'POST':
+#         # If the form is submitted to update the profile
+#         form = UserProfileForm(request.POST, instance=profile)
+#         if form.is_valid():
+#             form.save()
+#             messages.success(request, 'Profile updated successfully')
+#         else:
+#             messages.error(request, 'Update failed. Please ensure the form is valid.')
+#     else:
+#         form = UserProfileForm(instance=profile)
+
+#         # If the form is submitted to add a product to the wishlist
+#         product_id = request.POST.get('product_id')
+#         if product_id:
+#             product = Product.objects.get(pk=product_id)
+#             wishlist.products.add(product)
+#             messages.success(request, f'Product "{product.name}" added to your wishlist.')
+#             return redirect('profile')  # Redirect back to the profile page
+
+#     orders = profile.orders.all()
+
+#     template = 'profiles/profile.html'
+#     context = {
+#         'form': form,
+#         'orders': orders,
+#         'wishlist': wishlist,
+#         'on_profile_page': True
+#     }
+
+#     return render(request, template, context)
 
 
 
