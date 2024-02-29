@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Wishlist
-from .forms import ProductForm
+from .models import Product, Category, Wishlist, Review
+from .forms import ProductForm, ReviewForm
 
 
 # Create your views here.
@@ -158,3 +158,22 @@ def add_to_wishlist(request):
     # If the request method is not POST or if product_id is not provided, redirect back
     messages.error(request, 'Failed to add product to your wishlist.')
     return redirect('home')  # You can change 'home' to the appropriate URL
+
+
+@login_required
+def add_review(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Review added successfully')
+            return redirect('product_detail', product_id=product_id)
+        else:
+            messages.error(request, 'Failed to add review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm()
+    return render(request, 'products/product_detail.html', {'form': form, 'product': product})
