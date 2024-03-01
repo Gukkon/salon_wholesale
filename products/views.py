@@ -176,4 +176,5 @@ def add_review(request, product_id):
             messages.error(request, 'Failed to add review. Please ensure the form is valid.')
     else:
         form = ReviewForm()
+    
     return render(request, 'products/product_detail.html', {'form': form, 'product': product})

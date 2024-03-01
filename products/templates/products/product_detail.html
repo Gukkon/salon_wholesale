@@ -115,45 +115,45 @@
             </div>
         </div>
     </div>
-    <div class="card-body d-flex justify-content-center">
-        <div>
-            <h3>Please create a review for {{ product.name }}</h3>
-            
-            <!-- Bootstrap grid container for form -->
+    <div class="card-body">
+        <div class="container">
             <div class="row">
-                <div class="col-md-7">
-                    <!-- Add a form to submit a review -->
-                    <form method="post" action="{% url 'product_detail' product.id %}">
+                <div class="col-md-8">
+                    <h3>Please create a review for {{ product.name }}</h3>
+                    <form method="post" action="{% url 'add_review' product.id %}">
                         {% csrf_token %}
                         <div class="form-group">
-                            <textarea class="form-control" name="content" rows="4" cols="50"></textarea>
-                        </div>
-                        <div class="form-group">
-                            Rating: <input class="form-control" type="number" name="rating" min="1" max="5">
+                            <label for="content">Your Review:</label>
+                            <textarea class="form-control" name="content" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Review</button>
                     </form>
                 </div>
             </div>
-            
             <!-- Display existing reviews -->
-            <h2>Reviews</h2>
-            {% if product.reviews.all %}
-                <ul>
-                {% for review in product.reviews.all %}
-                    <li>
-                        <p>{{ review.content }}</p>
-                        <p>Rating: {{ review.rating }}</p>
-                        <p>By: {{ review.user.username }}</p>
-                        <p>Posted on: {{ review.created_at }}</p>
-                    </li>
-                {% endfor %}
-                </ul>
-            {% else %}
-                <p>No reviews yet.</p>
-            {% endif %}
-        </div>
-    </div>
+            <div class="card-body">
+                <h2>Reviews</h2>
+                {% if product.reviews.all %}
+                    <div class="row">
+                        {% for review in product.reviews.all %}
+                            <div class="col-md-6 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Review by {{ review.user.username }}</h5>
+                                        <hr>
+                                        <p class="card-text">{{ review.content }}</p>
+                                        <p class="card-text"><small class="text-muted">Posted on: {{ review.created_at }}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p>No reviews yet.</p>
+                {% endif %}
+            </div>
+            
+    
     
 {% endblock %}
 
