@@ -33,12 +33,11 @@ class Product(models.Model):
         return self.name
 
     def get_rating(self):
-        # Calculate the average rating for the product
         average_rating = self.reviews.aggregate(Avg('stars'))['stars__avg']
         if average_rating is not None:
-            return round(average_rating, 2)  # Round to 2 decimal places
+            return round(average_rating, 2) 
         else:
-            return None  # Return None if there are no reviews
+            return None 
 
 class Wishlist(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
