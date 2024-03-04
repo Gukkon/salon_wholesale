@@ -3,15 +3,15 @@
       "pk": 1,
       "model": "products.product",
       "fields": {
-        "sku": "ARDNAIL01",
-        "name": "Ardell Nail Addict Natural Style Artificial Nails",
-        "description": "Crafted from high-quality materials, our false nails are durable, lightweight, and easy to apply, ensuring a flawless finish every time. From classic French tips to trendy designs, our range caters to every style and occasion. ",
-        "price": 9.99,
-        "category": "12",
-        "rating": 4.5,
-        "image_url": "/media/Ardell_Nail_Addict_Natural_Style_Artificial_Nails_Salon_Quality_Nail_Tips_for_Home_Natural_Squared.avif",
-        "image": "Ardell Nail Addict Natural Style Artificial Nails Salon Quality Nail Tips for Home Natural Squared.avif"
-      }
+      "sku": "ARDNAIL01",
+      "name": "Ardell Artificial Nails",
+      "description": "",
+      "price": 9.99,
+      "category": "12",
+      "rating": 4.5,
+      "image_url": "/media/Ardell_Nail_Addict_Natural_Style_Artificial_Nails_Salon_Quality_Nail_Tips_for_Home_Natural_Squared.avif",
+      "image": "Ardell Nails Salon Quality Nail Tips for Home Natural Squared.avif"
+     }
     },
     {
       "pk": 2,
@@ -88,7 +88,7 @@
       "model": "products.product",
       "fields": {
         "sku": "CERAVE01",
-        "name": "CeraVe SA Smoothing Cream for Rough and Bumpy Skin with Salicylic Acid and 3 Essential Ceramides 177ml",
+        "name": "CeraVe SA Smoothing Cream for Rough and Bumpy Skin 177ml",
         "description": "Indulge your skin in luxurious hydration with our exquisite body oil. Formulated with a blend of nourishing oils, vitamins, and antioxidants, our body oil deeply moisturizes and revitalizes your skin, leaving it silky smooth and irresistibly soft to the touch.",
         "price": 12.49,
         "category": "4",
@@ -158,7 +158,7 @@
       "model": "products.product",
       "fields": {
         "sku": "COLLSU02",
-        "name": "Collistar Sublime Melting Milk Fast Absorbing Body Cream with Shea Butter and Jojoba Oil for Smooth and Radiant Skin 400ml",
+        "name": "Collistar Absorbing Body Cream with Shea Butter for Smooth and Radiant Skin 400ml",
         "description": "Elevate your skincare routine with our luxurious collection of lotions and moisturizers. Crafted with the finest ingredients and backed by dermatological expertise, our formulas are designed to nourish, hydrate, and rejuvenate your skin.",
         "price": 21.99,
         "category": "4",
@@ -200,7 +200,7 @@
       "model": "products.product",
       "fields": {
         "sku": "ESTEELA03",
-        "name": "Estee Lauder Advanced Night Repair Serum Synchronized Multi-Recovery Complex 50ml",
+        "name": "Estee Lauder Advanced Night Repair Serum Complex 50ml",
         "description": "Elevate your skincare routine with our luxurious collection of lotions and moisturizers. Crafted with the finest ingredients and backed by dermatological expertise, our formulas are designed to nourish, hydrate, and rejuvenate your skin.",
         "price": 99.99,
         "category": "4",
@@ -228,7 +228,7 @@
       "model": "products.product",
       "fields": {
         "sku": "KISSIMP01",
-        "name": "KISS imPRESS Press-On Manicure One More Chance Short Length Square with PureFit Technology - 30 Fake Nails",
+        "name": "KISS Manicure One More Chance with PureFit Technology",
         "description": "Crafted from high-quality materials, our false nails are durable, lightweight, and easy to apply, ensuring a flawless finish every time. From classic French tips to trendy designs, our range caters to every style and occasion. ",
         "price": 12.49,
         "category": "12",
@@ -284,7 +284,7 @@
       "model": "products.product",
       "fields": {
         "sku": "MAXSPOT01",
-        "name": "Max Factor NailFinity Nail Polish Spotlight on Her 420 12ml",
+        "name": "Max Factor NailFinity Nail Polish Spotlight 12ml",
         "description": "Transform your nails into a work of art with our vibrant and versatile nail polish collection. From timeless classics to trend-setting shades, our polish offers endless possibilities for expressing your unique style and personality.",
         "price": 7.99,
         "category": "10",
@@ -312,7 +312,7 @@
       "model": "products.product",
       "fields": {
         "sku": "MAYBEL01",
-        "name": "Maybelline New York Lasting Fix Loose Face Powder - 01 Translucent 6g",
+        "name": "Maybelline New York Lasting Fix Loose Face Powder 6g",
         "description": "Experience the ultimate feeling of freshness and comfort with our luxurious body powder. Crafted with care using finely milled ingredients, our powder helps absorb excess moisture and sweat, keeping your skin dry and silky-smooth throughout the day.",
         "price": 8.99,
         "category": "5",
@@ -326,7 +326,7 @@
       "model": "products.product",
       "fields": {
         "sku": "NIVEA01",
-        "name": "NIVEA Nutritive Body Milk 48H Deep Moisturizing Body Cream with Almond Oil 625ml",
+        "name": "NIVEA Nutritive Body Milk Moisturizing Body Cream 625ml",
         "description": "Elevate your skincare routine with our luxurious collection of lotions and moisturizers. Crafted with the finest ingredients and backed by dermatological expertise, our formulas are designed to nourish, hydrate, and rejuvenate your skin.",
         "price": 15.99,
         "category": "4",
@@ -340,7 +340,7 @@
       "model": "products.product",
       "fields": {
         "sku": "RIMMEL01",
-        "name": "Rimmel 60 Seconds Super Shine Nail Polish Flip Flop 406 8ml",
+        "name": "Rimmel 60 Seconds Super Shine Nail Polish 8ml",
         "description": "Transform your nails into a work of art with our vibrant and versatile nail polish collection. From timeless classics to trend-setting shades, our polish offers endless possibilities for expressing your unique style and personality.",
         "price": 5.99,
         "category": "10",
@@ -354,7 +354,7 @@
       "model": "products.product",
       "fields": {
         "sku": "RIMMEL02",
-        "name": "Rimmel London Super Gel French Manicure Nail Polish 12ml 91 English Rose",
+        "name": "Rimmel London Super Gel French Manicure Nail Polish 12ml",
         "description": "Transform your nails into a work of art with our vibrant and versatile nail polish collection. From timeless classics to trend-setting shades, our polish offers endless possibilities for expressing your unique style and personality.",
         "price": 6.99,
         "category": "10",
@@ -382,7 +382,7 @@
       "model": "products.product",
       "fields": {
         "sku": "ROGERG01",
-        "name": "Roger & Gallet Jean Marie Farina Individual Soaps in Gift Box 3 x 100g - Sealed",
+        "name": "Roger & Gallet Individual Soaps in Gift Box 3 x 100g",
         "description": "Enriched with nourishing botanical extracts and moisturizing oils, our formula lathers into a rich, creamy foam that effortlessly removes impurities and imparts a subtle, lingering fragrance.",
         "price": 14.99,
         "category": "9",
@@ -452,7 +452,7 @@
       "model": "products.product",
       "fields": {
         "sku": "SOPHYR01",
-        "name": "Sophy Robson Nail-Its False Nails Red Half Moon 24 Press-On Nails",
+        "name": "Sophy Robson False Nails Red Half Moon 24 Press-On Nails",
         "description": "Crafted from high-quality materials, our false nails are durable, lightweight, and easy to apply, ensuring a flawless finish every time. From classic French tips to trendy designs, our range caters to every style and occasion. ",
         "price": 9.99,
         "category": "12",
@@ -508,7 +508,7 @@
       "model": "products.product",
       "fields": {
         "sku": "WELEAR01",
-        "name": "WELEDA Aroma Relax Comforting Creamy Body Wash 200ml",
+        "name": "WELEDA Aroma Comforting Creamy Body Wash 200ml",
         "description": "Elevate your skincare routine with our luxurious collection of lotions and moisturizers. Crafted with the finest ingredients and backed by dermatological expertise, our formulas are designed to nourish, hydrate, and rejuvenate your skin.",
         "price": 9.99,
         "category": "8",
@@ -578,7 +578,7 @@
         "model": "products.product",
         "fields": {
         "sku": "ALFAM01",
-        "name": "Alfaparf Milano Semi di Lino Diamond Illuminating Low Shampoo 250ml",
+        "name": "Alfaparf Milano Semi di Lino Diamond Low Shampoo 250ml",
         "description": "Elevate your hair care routine with our luxurious shampoo, crafted to cleanse and revitalize your locks with every wash. Infused with nourishing ingredients, our formula gently removes impurities and buildup while maintaining your hair's natural balance.",
         "price": 19.99,
         "category": "1",
@@ -606,7 +606,7 @@
           "model": "products.product",
           "fields": {
             "sku": "AMERI01",
-            "name": "American Crew Daily Deep Moisturizing Shampoo 250ml",
+            "name": "American Crew Deep Moisturizing Shampoo 250ml",
             "description": "Elevate your hair care routine with our luxurious shampoo, crafted to cleanse and revitalize your locks with every wash. Infused with nourishing ingredients, our formula gently removes impurities and buildup while maintaining your hair's natural balance.",
             "price": 14.99,
             "category": "1",
@@ -648,7 +648,7 @@
           "model": "products.product",
           "fields": {
             "sku": "LOREA01",
-            "name": "L'Oreal 50ml Majirel Permanent Hair Colour Very Pale Blonde",
+            "name": "L'Oreal 50ml Majirel Hair Colour Very Pale Blonde",
             "description": "Transform your look and express your individuality with our vibrant range of hair coloring products. Whether you're craving a bold, statement-making hue or subtle, natural-looking highlights, our collection offers a spectrum of shades to suit every style and preference. ",
             "price": 12.99,
             "category": "2",
@@ -662,7 +662,7 @@
           "model": "products.product",
           "fields": {
             "sku": "LOREAP01",
-            "name": "L'Oreal Professionnel Multi-Benefit Leave-in Treatment with Resveratrol for Colored Hair 190ml",
+            "name": "L'Oreal Professionnel Treatment with Resveratrol for Colored Hair 190ml",
             "description": "Transform your look and express your individuality with our vibrant range of hair coloring products. Whether you're craving a bold, statement-making hue or subtle, natural-looking highlights, our collection offers a spectrum of shades to suit every style and preference. ",
             "price": 17.99,
             "category": "2",
@@ -676,7 +676,7 @@
           "model": "products.product",
           "fields": {
             "sku": "LOREAS01",
-            "name": "L'Oréal Professionnel Serioxyl Advanced Density Activator Hair Growth Serum 90ml",
+            "name": "L'Oréal Professionnel Advanced Density Activator Hair Growth 90ml",
             "description": "Restore confidence in your locks with our advanced hair loss treatment. Formulated with clinically proven ingredients and cutting-edge technology, our treatment targets the root cause of hair loss to promote thicker, fuller hair growth",
             "price": 28.99,
             "category": "3",
@@ -690,7 +690,7 @@
           "model": "products.product",
           "fields": {
             "sku": "MATRIX01",
-            "name": "Matrix So Silver Hair Mask for Blondes, Greys, and Silvers 200ml",
+            "name": "Matrix Silver Hair Mask for Greys and Silvers 200ml",
             "description": "Transform your look and express your individuality with our vibrant range of hair coloring products. Whether you're craving a bold, statement-making hue or subtle, natural-looking highlights, our collection offers a spectrum of shades to suit every style and preference. ",
             "price": 16.99,
             "category": "2",
@@ -732,7 +732,7 @@
           "model": "products.product",
           "fields": {
             "sku": "PARTS01",
-            "name": "Part System 6 Chemically Treated Hair with Progressed Thinning Scalp and Hair Treatment 100ml",
+            "name": "Part System 6 Hair with Thinning Scalp and Hair Treatment 100ml",
             "description": "Restore confidence in your locks with our advanced hair loss treatment. Formulated with clinically proven ingredients and cutting-edge technology, our treatment targets the root cause of hair loss to promote thicker, fuller hair growth",
             "price": 32.99,
             "category": "3",
@@ -788,7 +788,7 @@
           "model": "products.product",
           "fields": {
             "sku": "WELLA01",
-            "name": "Wella Professionals Color Fresh Semi-Permanent Hair Mask 150ml Pink",
+            "name": "Wella Color Fresh Semi-Permanent Hair Mask 150ml",
             "description": "Transform your look and express your individuality with our vibrant range of hair coloring products. Whether you're craving a bold, statement-making hue or subtle, natural-looking highlights, our collection offers a spectrum of shades to suit every style and preference. ",
             "price": 15.99,
             "category": "2",
@@ -797,5 +797,5 @@
             "image": "WellaProfessionalsColorFreshSemi-PermanentHairMask150mlPink.avif"
           }
         }
-      ]      
+]      
   
