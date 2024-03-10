@@ -1,1 +1,1 @@
-web: gunicorn salon-wholesale.wsgi:application
+web: gunicorn salon_wholesale.wsgi:application
