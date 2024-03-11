@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -120,7 +120,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'boutique_ado.wsgi.application'
+WSGI_APPLICATION = 'salon_wholesale.wsgi.application'
 
 WSGI_APPLICATION = 'salon_wholesale.wsgi.application'
 
