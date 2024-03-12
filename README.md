@@ -1,1 +1,1 @@
-[View the live project here](https://salon-wholesale-b203aeb779cf.herokuapp.com/)
+[View the live project here](https://salon-wholesale-b203aeb779cf.herokuapp.com/) 
