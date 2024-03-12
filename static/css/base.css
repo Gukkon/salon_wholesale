@@ -33,6 +33,10 @@ html {
   min-width: 260px;
 }
 
+.shop-now-button:hover {
+  color: #fff;
+}
+
 .btn-black {
   background: black;
   color: white;
