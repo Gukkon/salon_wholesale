@@ -300,6 +300,10 @@ color: #17a2b8; /* text-info */
       height: calc(100vh - 116px);
   }
 
+  .text-uppercase {
+    font-size: 20px;
+  }
+
   .display-4.logo-font.text-black {
       font-size: 2rem;
   }
