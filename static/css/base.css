@@ -9,7 +9,6 @@ html {
     color: #555;
   }
 
-  
   /* from Bulma */
 .icon {
   align-items: center;
@@ -187,6 +186,8 @@ input[name='q']::placeholder {
 }
 }
 
+
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -282,6 +283,10 @@ color: #17a2b8; /* text-info */
 
   .header-container {
       padding-top: 164px;
+  }
+
+  .text-uppercase {
+    font-size: 20px;
   }
 }
 
