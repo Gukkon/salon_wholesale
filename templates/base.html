@@ -134,6 +134,13 @@
     </div>
     {% endif %}
    
+    
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
     {% block footer %}
       <!-- Footer -->
     <footer class="page-footer">
@@ -162,11 +169,6 @@
       </div>
   </footer>
 </div>
-    {% endblock %}
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
     {% endblock %}
 
     {% block postloadjs %}
