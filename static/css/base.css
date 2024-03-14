@@ -7,21 +7,42 @@ html {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+    padding-bottom: 50px; /* Adjust this value to match the height of your footer */
+    box-sizing: border-box; /* Ensure padding doesn't affect element's total height */
   }
 
-  #flex-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+ /* Matthew James Taylor Bottom Footer */
+
+ .page-footer {
+  text-align: center;
+  width: 100%;
+  background-color: #244c2c;
+  color: white;
+  position: fixed;
+  bottom: 0;
 }
 
-#flex-container>footer {
-    margin-top: auto;
+.social-media {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center the social media links */
 }
 
-.page-footer {
-    background-color: #3C3C3C;
-    border-top: 1px solid #FAB49A;
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.footer-copyright p {
+  margin: 0;
 }
 
 
