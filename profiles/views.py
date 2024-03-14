@@ -5,6 +5,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from products.models import Product, Wishlist
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -21,14 +22,15 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
-        
+            messages.error
+            (request, 'Update failed. Please ensure the form is valid.')
         product_id = request.POST.get('product_id')
         if product_id:
             product = Product.objects.get(pk=product_id)
             wishlist.products.add(product)
-            messages.success(request, f'Product "{product.name}" added to your wishlist.')
-            return redirect('profile') 
+            messages.success
+            (request, f'Product "{product.name}" added to your wishlist.')
+            return redirect('profile')
     else:
         form = UserProfileForm(instance=profile)
 
@@ -85,4 +87,3 @@ def wishlist(request):
         return redirect('profile')
 
     return render(request, 'profile.html', {'profile': profile})
-

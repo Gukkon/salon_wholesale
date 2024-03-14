@@ -124,7 +124,7 @@
                         {% csrf_token %}
                         <div class="form-group">
                             <label for="content">Your Review:</label>
-                            <textarea class="form-control" name="content" rows="4" required></textarea>
+                            <textarea id="content" class="form-control" name="content" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Review</button>
                     </form>
@@ -152,11 +152,9 @@
                     <p>No reviews yet.</p>
                 {% endif %}
             </div>
-            
-    
-    
+        </div>   
+    </div>    
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
