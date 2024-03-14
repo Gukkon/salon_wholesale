@@ -16,34 +16,34 @@ html {
  .page-footer {
   text-align: center;
   width: 100%;
-  background-color: #244c2c;
+  background-color: black;
   color: white;
   position: fixed;
   bottom: 0;
 }
 
 .social-media {
-  list-style: none;
+  list-style-type: none !important;
   padding: 0;
   text-align: center; /* Center the social media links */
 }
 
 .social-media li {
   display: inline-block;
-  margin-right: 10px;
 }
 
-.social-media li:last-child {
-  margin-right: 0;
+.social-media li:not(:last-child) {
+  margin-right: 10px; /* Add spacing between social media icons */
 }
 
 .social-media a {
-  text-decoration: none;
+  text-decoration: none; /* Remove underline from social media links */
 }
 
 .footer-copyright p {
   margin: 0;
 }
+
 
 
   /* from Bulma */
