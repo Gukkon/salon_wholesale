@@ -9,6 +9,22 @@ html {
     color: #555;
   }
 
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#flex-container>footer {
+    margin-top: auto;
+}
+
+.page-footer {
+    background-color: #3C3C3C;
+    border-top: 1px solid #FAB49A;
+}
+
+
   /* from Bulma */
 .icon {
   align-items: center;
