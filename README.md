@@ -4,43 +4,8 @@
 
 The Salon365 website is a wholesale website that allows users to buy a range of beauty products at a lower cost. To start purchasing products, user will have to create an account with Salon365. Without a log in or password then all they would be able to do is browse the site. Once registration has been completed, user can then search for products by category, price and alphabetically. Products then can be bought by adding to cart, saved on their own personal wishlist on their profile page and also leave reviews on products they like or dislike. 
 
-![Image of my responsive site]()
+![Image of my responsive site](/docs/images/responsive.png)
 
-## Contents 
-
-* [User Experience (UX)](#user-experience-ux)
-  * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Icons and Images](#icons-and-images)
-  * [Models](#models)
-  * [Features](#features)
-  * [Accessibility](#accessibility)
-  * [Wireframes](#wireframes)
-
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
-
-* [Deployment](#deployment)
-
-* [Testing](#testing)
-  * [Automated Testing](#automated-testing)
-    * [W3 Nu HTML Validator](#w3-nu-HTML-validator)
-    * [W3C CSS Validation Service](#w3c-css-validation-service)
-    * [Wave](#wave-testing)
-    * [Lighthouse](#lighthouse-testing)
-    * [Flake8](#flake8)
-  * [Manual Testing](#manual-testing)
-  * [Bugs](#bugs)
-
-* [Credits](#credits)
-  * [Code Sections/Tutorials](#code-sectionstutorials)
-  * [Media](#media)
-  * [Text](#text)
-  * [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
 ### Project Goals
@@ -51,39 +16,55 @@ For Salon365, the main goal is to create a fully functional e-commerce website t
   * Review functionality for any products
   * Creating an easy flowing and accessible website with basic black and white colours to allow images and important text to be seen clearly so nothing goes amiss. 
 
-### User Stories
-#### Viewing and Navigation
-* View the website on a range of device sizes and have it be aesthetically pleasing and functional.
-* View a range of beauty products that are for sale.
-* View each product in detail onn their own product page.
-* View the total of my purchases at any time.
-* View products that maybe are on the wishlist
-* View and create reviews 
-#### Registration and User Accounts
-* Register for an account
-* Log in or log out
-* Recover passwords in case it is forgotten
+
+### **User Stories**
+
+#### **Viewing and Navigation**
+* View the site on a range of device sizes
+* View a list of beauty products 
+* View individual product details
+* Easily view the total of my purchases at any time
+
+<br/>
+
+#### **Registration and User Accounts**
+* Easily register for an account
+* Easily log in or log out
+* Easily recover my password in case I forget it
 * Receive an email confirmation after registering
 * Have a personalised user profile
-#### Sorting and Setting
-* Sort the list of available products
-* Sort by specific category of products
-* See what was searched for
-#### Purchasing and Checkout
-* Select the quantity of products when purchasing it
-* View items in my bag to be purchased
-* Adjust the quantity of individual items in my bag
-* Easily enter my payment information
-* View an order confirmation after checkout
-#### Admin and Store Management
-* Add Products
-* Edit/update products
-* Delete products
+* Have a personalised wishlist
 
+<br/>
+
+#### **Sorting and Setting**
+* Sort the list of available products
+* Sort a specific category of product
+* Search for a product by name or description
+* Easily see what I have searched for and the number of results
+
+<br/>
+
+#### **Purchasing and Checkout**
+* Easily select the quantity of a product when purchasing it
+* View items in my bag to be purchased
+* Adjust the number of individual items in my bag
+* Easily enter my payment information
+* Feel my personal and payment information is safe and secure
+* View an order confirmation after checkout
+
+<br/>
+
+#### **Admin and Store Management**
+* Add product
+* Edit/update a product
+* Delete a product
+* Create sale items including prices, start dates, and end dates (on the Django admin page)
+
+---
+<br/>
 ## Design
 ### Colour Scheme
-
-![Image of colour scheme](/docs/images/colour-palette.png)
 
 The colour scheme of the site is simply black and white.
 
@@ -94,46 +75,37 @@ The colour scheme of the site is simply black and white.
 
 [Google Fonts](https://fonts.google.com/) was used to import the fonts featured in the site, both fonts used are of the type sans-serif to maintain consistency
 
-![Image of Stripe Element Font]()
-* TO DO!
-
-![Image of Body and Title Font]()
-* TO DO!
-
 ### Icons and Images
 
-* All icons used throughout the site were provided by [FontAwesome](https://fontawesome.com/) as they are while consistent and easily understandable
-* All product images will be attributed in the credits section, along with the hero image on the home page
-* The home page image is a simple image that shows the user that it is a beauty style site
+* All icons used throughout the site were provided by [FontAwesome](https://fontawesome.com/)
+* All product images were taken from [Qogita Website](https://www.qogita.com)
+* The home page image is a simple image taken from Google
 
 ### Models
 For this website I created 2 new models of a Wishlist and Product Review. This wishlist is linked to the product model allowing users to view a product and save it on their own personal profile. The wishlist model uses the relationship of the product id to work with the users log in data to achieve this. Same with the Review model, the products is linked to the model as well as the user model to allow the logged in user to select the product from the product list and use the text field to input their review which will then be shown on the frontend along with a date and time stamp. 
 ![Model image]()
 
 ### Features
-is comprised of 12 core sections: Home page, Signup, Login, Profile, Wishlist, Products view, Book Detail, Book Reviews, Shopping Bag view, Checkout, Checkout Success, Contact Us
+The website is made up of 11 pages:
 
-* All pages feature the main nav bar, on desktop this includes the title, and search bar which can search for terms in book titles, blurbs, or information like the author of a book. The My Account drop-down features Product Management which is only accessible to the superuser (or site management) and can be used to add, edit, or delete products. The My Wishlist page and My Profile pages can also be accessed through this dropdown, along with being able to log out if a user is logged in. The Contact form is accessible through the Contact Us icon, and the bag icon displays up to date bag total information which can be clicked to bring the user to the Shopping Bag page. The main navbar also features a Home page link for users on mobile, and the All Books link to show all products which can be filtered in the menu. Books by Genre allows users to select and view only books from specific genres, and the Special Offers button allows users to view the New Releases and Clearance sections.
-* All pages on the site are responsive across multiple different screen sizes, on smaller screens like mobile phones the top navbar is condensed into a hamburger menu to ensure the screen isn't cluttered while maintaining the same functionality as that found on larger screens.
-* For all actions a user performs on the site a pop-up message will appear either confirming that their requested action has been successful or giving them details of the action they've just performed. For example, adding, removing, or altering a product in the shopping bag will all be accompanied by messages unique to the action performed.
-
-
-* Future Implementations:
-
-### Accessibility
-* Throughout the development of this site accessibility was a priority, semantic HTML, alt tags, and aria-labels are used wherever possible to assist screen readers. The fonts chosen are ones I believe to be dyslexia friendly and readable no matter what screen size the user is on.
-* Lighthouse...
-![Lighthouse Accessibility Score]() 
-* [WAVE](https://wave.webaim.org/) was utilised to test the web accessibility of each page on the site.
-
-### Wireframes
-Before development began I designed wireframes to aid in the creation of my site, when these were created I didn't intend on including a contact form so unfortunately this is missing from the wireframes
+  * Home Page - Shows the User the main start paghe where they can start to navigate around the site and start to log in or register
+  * All Products - This page show the user all the products available. 
+  * Product Detail/Review - A more close up of the product page showing the user a description of the product with an option to add to cart, add to wishlist or createa review
+  * Product Management - Allows the superuser to modify the site
+  * My Profile/Wishlist - Shows the current users profile details along with what product(s) they have saved so far
+  * Logout - To log the user out
+  * Register - To sign up
+  * Sign-in - To allow access to the site
+  * Shopping Bag - Shows the user what is in their bag at the present time
+  * Checkout - Allow the user to add checkout information so order can be processed
+  * Checkout Success - Page that shows the order was successful
 
 
 ### Languages Used
-* HTML, CSS, Python, and JavaScript
+* HTML, CSS, Python, and JavaScript along with the Django framework inlcuding Jinja
 
 ### Frameworks, Libraries, and Programs Used
+* [Stripe](https://stripe.com)
 * [AWS](https://aws.amazon.com/) to hold media files
 * [Bootstrap](https://getbootstrap.com/) was utilised to create a core HTML structure similar to Boutique Ado so that my time could be spent on providing functionality
 * [CI Python Linter](https://pep8ci.herokuapp.com/#)
@@ -179,7 +151,7 @@ Heroku
 9. Click 'Enable Automatic Deploys' to ensure that your GitHub repository and Heroku are synced if you make any further code or project changes
 10. Click 'Deploy Branch' to let Heroku begin building the site
 11. We must now initialise our empty database by clicking 'More' then 'Run console'
-12. In the terminal that has appeared type 'from second-hand-bookshop import db' and click enter
+12. In the terminal that has appeared type 'from salon_wholesale import db' and click enter
 13. Now type 'db.create_all()' and hit enter again
 14. Type 'exit()' to exit the Python terminal and close the console, our Heroku database will now contain the tables and columns created from our models.py files
 15. Click the 'Open app' button to visit your built site
@@ -284,186 +256,216 @@ Stripe:
 
 How to Fork the Second Hand Shelf
 1. Login to your GitHub account
-2. Navigate to the 'second-hand-bookshop' repository and click the 'Fork' button in the top right corner
+2. Navigate to the 'salon_wholesale' repository and click the 'Fork' button in the top right corner
 
 How to Clone
 1. Login to your GitHub account
-2. Navigate to the 'second-hand-bookshop' repository
+2. Navigate to the 'salon_wholesale' repository
 3. Click the green 'Code' button next to the 'Gitpod' button
 4. Click 'Open with GitHub desktop'
 5. Click the 'Choose...' button and navigate to a local path where you wish to store the cloned repository
 6. Click the 'Clone' button
 
-
-## Testing
-### Automated Testing
-
 ### W3 Nu HTML Validator
 The W3 Nu HTML Validator:
 
-* [Home page]()
-* [Sign Up page]()
-* [Log In page]()
-* [Product Management page]()
-* [Wishlist page]()
-* [Profile page]()
-* [Contact Us page]()
-* [All Books page]()
-* [Book Detail page]()
-* [Shopping Bag page]()
-* [Checkout page]()
-* [Checkout Success page]()
+* [Home page](/docs/images/homepagehtml.png)
+* [Sign Up page](/docs/images/registerpageresult.png)
+* [Log In page](/docs/images/loginpageresults.png)
+* [Profile & Wishlist page](/docs/images/profilepagewishlist.png)
+* [All Products page](/docs/images/allproductspage.png)
+* [Product Detail page with review](/docs/images/productdetailwithreview.png)
+* [Shopping Bag page](/docs/images/shoppingbag.png)
+* [Checkout page](/docs/images/checkoutpage.png)
+* [Checkout Success page](/docs/images/checkoutsuccess.png)
 
 ### W3C CSS Validation Service
 The W3C CSS Validation Service was used to validate the two CSS files contained within the project, the results are as follows:
 
-* [Base.css](/)
-* [Profile.css]()
-
-REPORT...
+* [Base.css](/docs/images/basetest.png)
+* [Profile.css](/docs/images/profilecss.png)
 
 ### JS Hint
 JS Hint was used to validate the JavaScript found throughout the project with the results being:
 
-* [Profile]()
-* [Stripe]()
-* [Quality Price Calculator]()
-* [Quantity Input Calculator]()
-
-REPORT...
+* [Profile](/docs/images/profilejs.png)
+* [Stripe](/docs/images/stripe.png)
 
 ### Python Linter
 
-The following files were tested with a [Python Linter]() to ensure PEP8 compliance.
+The following files were tested with a Python Linter to ensure PEP8 compliance.
 
-* [Bag contexts.py]()
-* [Bag views.py]()
-* [Bag urls.py]()
-* [Checkout admin.py]()
-* [Checkout context.py]()
-* [Checkout forms.py]()
-* [Checkout models.py]()
-* [Checkout urls.py]()
-* [webhook-handler.py]()
-* [webhooks.py]()
-* [Contact admin.py]()
-* [Contact forms.py]()
-* [Contact models.py]()
-* [Contact urls.py]()
-* [Contact views.py]()
-* [Home urls.py]()
-* [Home views.py]()
-* [Products views.py]()
-* [Products admin.py]()
-* [Products forms.py]()
-* [Products models.py]()
-* [Products urls.py]()
-* [Profile forms.py]()
-* [Profile urls.py]()
-* [Profile models.py]()
-* [Profile views.py]()
+* [Bag contexts.py](/docs/images/bagcontext.png)
+* [Bag views.py](/docs/images/bagviews.png)
+* [Bag urls.py](/docs/images/bagurls.png)
+* [Checkout forms.py](/docs/images/checkoutforms.png)
+* [Checkout models.py](/docs/images/checkoutmodel.png)
+* [Checkout urls.py](/docs/images/checkouturls.png)
+* [webhook-handler.py](/docs/images/webhookhandler.png)
+* [webhooks.py](/docs/images/webhook.png)
+* [Home urls.py](/docs/images/homeurl.png)
+* [Home views.py](/docs/images/homeviews.png)
+* [Products views.py](/docs/images/productview.png)
+* [Products forms.py](/docs/images/productform.png)
+* [Products models.py](/docs/images/productmodel.png)
+* [Products urls.py](/docs/images/producturls.png)
+* [Profile forms.py](/docs/images/profileform.png)
+* [Profile urls.py](/docs/images/producturls.png)
+* [Profile models.py](/docs/images/profilemodel.png)
+* [Profile views.py](/docs/images/profileviews.png)
 
 ### Wave Testing?
 
 
 ### Lighthouse Testing
 ## Desktop
-* [Home page]()
-* [Sign up page]()
-* [Log in page]()
-* [Profile page]()
-* [Wishlist page]()
-* [Contact page]()
-* [Book detail page]()
-* [Shopping bag page]()
-* [Checkout page]()
-* [Checkout Success page]()
+* [Desktop Accessibility](/docs/images/accessibilty.png)
 
 ## Mobile
-* [Home page]()
-* [Sign up page]()
-* [Log in page]()
-* [Profile page]()
-* [Wishlist page]()
-* [Contact page]()
-* [Book detail page]()
-* [Shopping bag page]()
-* [Checkout page]()
-* [Checkout Success page]()
+* [Mobile Accessibility](/docs/images/accessibilty2.png)
+
+Both Mobile and Desktop gave me an above 90% score on accessibility which shows that users have the best chance to access the site to its fullest without any trouble
 
 
 ### Flake8
 used the command 'python3 -m flake8' in the terminal to further check for anything I may have missed. 
 
-REPORT...
+* ![Flake8 1](/docs/images/flake8.png)
+* ![Flake8 2](/docs/images/flake81.png)
 
-## Manual Testing
-### Testing User Stories
 
+### **Manual Testing**
+
+I tested my website by navigating around the site as any other user would testing all the nav links, buttons, forms etc to see if they all worked.
+
+<br/>
+
+#### **Links:**
+
+* All links were clicked on and tested and directed me to the correct section of the site.
+<br/>
+
+#### **Buttons:**
+
+* All buttons did what they were expected to do such as send data to the database, complete forms and start the order process 
+
+<br/>
+
+#### **Forms:**
+
+
+* All forms were checked for validation errors by pressing confirm button with no data in the them and all passed.
+* The user sees a success message when having successfully submitted a form when the form was successfully completed correctly
+* The form will not submit when input types and lengths/amounts are not appropriate by testing every form field that takes a specific input type to see if it would submit with an undesired input type
+
+<br/>
+
+#### **Authentication:**
+
+* Non-logged-in users cannot purchase any items from the site. Unfortunately this didn't work as anyone can do that
+* Users cannot view confidential information about other users, such as user account details, wish lists, carts, or commissions. This works fine with no issues.
+* Wishlist and reviews can only be created if user signs up. This was tested with a non user and to add and passed as I was directed to the sign up page
+
+<br/>
+
+#### **Database:**
+
+* User data is added and stays over time, including order history, commissions and wishlist. I tested this by adding multiple users with different data and checked that throughout logging in and out, and over the course of weeks, the data remained the same
+* User is linked to their order history, wishlist, and commission data. Tested this with multiple users and all info were on their personal profile page 
+
+<br/>
+
+
+#### **Checkout**
+
+* Adding, editing, and removing products from the bag work as expected
+* The signed up users correct details auto-fill in the checkout form
+* Payments went through ok through Stripe
+
+<br/>
+
+#### **Wishlist**
+
+* Adding and removing products from the wishlist work as expected
+* Editing their wishlist on the profile page worked fine too
+
+<br/>
+
+#### **Products**
+
+* The sorting and filtering functions works fine
+* They can be added/edited or deleted from the product management page by the superuser
+
+<br/>
+
+
+#### **Search**
+
+
+* The search function works as expected
+
+<br/>
+
+#### **Profile**
+
+* Shows the users editable details
+* Shows the users order history
+* Shows the users saved wishlist products
 
 ### Full Testing
 
-The Second Hand Shelf site has been continually tested throughout development, including both manual and automated testing as shown above in this document
+Salon365 site has been continually tested throughout development, including both manual and automated testing as shown above in this document
 
-* General:
-  * All navbar links direct the user to the correct page when clicked and items like Product Management do not appear unless the superuser is logged in
-  * All links throughout the site were tested and all brought users to the correct page or initiate the expected action
-  * For all actions taken on the page (i.e logging in, adding a book to your bag) will trigger a message in the top right corner confirming the action has been registered
-  * When a term is entered into the search bar and the search button is clicked it will display the products that match this query in terms of the title, author, or blurb
-  * All social media links in the footer direct the user to a new page when clicked 
 * Home page:
-  * The navbar hamburger icon drops down the navbar menu when clicked on mobile/smaller screens and each dropdown within the navbar displays correctly with links bringing users to the correct pages
-  * Each book feature when clicked links the user to the relevant page described on the feature card
+  * The navbar hamburger icon drops down the navbar menu when clicked on smaller screens and each dropdown within the navbar displays all the links needed to access the site
+  * Every product feature clicked links the user to the relevant page described
+
 * Login page:
-  * Users must enter the correct username and password to log in or they're met with an error message stating that this is not correct
-  * The 'forgot password' link brings users to the correct page and they are sent an email with a link to reset their password
-  * The 'remember me' radio button when clicked means that the user's login information is saved for the next time they try to access their account
+  * Users must enter the correct username and password to log in or an error will be shown
   * When a user logs in they're redirected to the home page
+
 * Sign up page:
-  * The email address must be in email format using a '@' symbol to submit the form, the email address must be entered the same way twice for validation to occur
-  * The username must be unique and can only include letters, numbers, and the following symbols @, ., +, -, _, otherwise an error message will appear
-  * The value of the password (again) field much match the value of the password field for the form to be submitted
-  * When the form is submitted the user is sent an email to confirm and validate their account, when the link in this email is clicked the user is able to log in with their details
+  * The email section has to be in email format using a '@' symbol to submit the form
+  * The username must be unique and can only include letters, numbers, and the following symbols @, ., +, -, _, otherwise an error message will appear and you can't sign up
+  * Once all details have been created, an email is sent to the user via email that they have to press on and will be directed to the log in page
+
 * My Account dropdown:
-  * When Product Management is clicked it brings the superuser to the add book form where all required fields must be filled in to submit the form. The 'edit' and 'delete' links on the all books and book detail pages direct to the correct pages/actions and can only be accessed or seen by the superuser
-  * Clicking 'add to wishlist' on the book detail page for a product adds this book to the user's wishlist which can be viewed by clicking the 'My Wishlist' tab, this also updates the button to say 'remove from wishlist'. When the remove from wishlist button is clicked the book is removed from the wishlist
-  * If a user clicks the 'My Profile' link, enters their default delivery information and clicks 'update information' this information is saved and will be used to autofill the checkout details form
-  * Each time a user who is logged in places an order it will appear in the order history section of the My Profile page, all information shown here is correct and clicking the order number brings the user to the order confirmation page shown when checkout was finalised
-* Contact Us page:
-  * The contact us page can be accessed regardless of whether a user is logged in, all fields are required and must be filled in to submit the form, the email address must be in a valid format or an error message will show
-  * The content field has a maximum character limit of 2000 to allow users to submit a reasonably in-depth message to the site owners. Any characters above 2000 will not be registered by the field
-  * When the user clicks the 'send your message' button they are redirected to the home page with a success message appearing and an email being sent confirming their message has been received
-* All Books page: 
-  * Clicking all books in the navbar allows users to filter books based on price, rating, language, and year of release, or to view all books. By clicking 'all books' users can choose to view different genres (also possible from the navbar dropdown) or special offers. There's a 'sort by' dropdown where users can choose to sort from price, or rating, high to low, and title or genre alphabetically or in reverse. If a user chooses to sort by rating the rating given by other users determines a book's position
-  * The back-to-top button sits on the bottom right side of the screen and when clicked brings the user back to the top of the page
-* Book detail page:
-  * The book detail page features the 'add to wishlist' button which does as it suggests and changes to 'remove from wishlist' when clicked
-  * A button stating 'Click here to rate or review' brings users to the review section of the page
-  * Choosing a book quality from the quality selector alters the price displayed based on internal calculations, and the quantity can be adjusted by using the quantity selector
-  * The 'Add to bag' button adds an item in its selected quality and quantity to the shopping bag and triggers a message confirming this action
-  * Users must be logged in to rate or review a book
-  * If there are no reviews for a book text describing this will be shown, otherwise, all reviews left for that particular book are displayed with edit and delete buttons on each that are visible and accessible only to the user who submitted the review. If a user leaves a review then clicks 'edit' the review form will be pre-populated based on the details of their original review 
-  * The star rating field logs the correct value according to how many stars are coloured in green when the user clicks the star they wish to rate the book 
-  * The written review is optional and the form can therefore be submitted without this being filled in, though the star rating is required and the form will not submit without it
-  * The written review field has a maximum length of 3000 characters to ensure users have as much freedom as possible in writing their review
-  * A superuser can leave multiple reviews per book for development and testing purposes but other users are only permitted to leave 1 review per book, if they attempt to add another they are given a warning message
+  * When Product Management is clicked it allows the superuser to add/delete and edit anything on the site
+  * The My profile link will send the user to their personal profile with their delivery information, any orders placed and if any items are in their wishlist
+
+* Product detail page:
+  * The product detail page has the product image on there with a short description of it along with an add to wishlist button under the add to bag button
+  * To add the product to your bag, there is an add to bag button under the description along with the amount increase button to determine how many you would like.
+  * Users must be logged in to actually purchase items
+  * On this page also a review can be typed out allowing users to leave a comment on what they think about the product 
+
 * Shopping Bag page:
-  * If the user has nothing in their shopping bag the page will be empty aside from a message that states 'Your bag is empty' with a button encouraging the user to view the books on offer
-  * When a book is added to the shopping bag a success message detailing the bag contents is shown, clicking either 'Secure checkout' or the bag icon brings the user to the shopping bag page. Here a summary is shown and users can adjust the quantity of items, or remove them, clicking 'Secure checkout' here brings the user to the checkout page
+  * If the user has nothing in their shopping bag the page will be empty aside from a message that states Your bag is empty
+  * When a product is added to the shopping bag a success message detailing the bag contents and clicking either 'Secure checkout' or the bag icon brings the user to the shopping bag page. On this page the user can add more of the same product or delete the product altogether
+
 * Checkout page:
-  * If users are logged in and have saved information via their profile the checkout details form will be pre-populated with this data, all required fields must be filled in in the correct format
-  * Ticking the 'save this delivery information to my profile' radio box updates the saved information stored in the user's profile
-  * The correct information is displayed as calculated by the item quality and quantity in the bag
-  * Clicking 'Complete order' when the form has been correctly filled out initiates a spinning green overlay to indicate the order is being processed and then users are redirected to the checkout success page
+  * The checkout form will be already populated if the user is logged in
+  * The details on the screen is correct and will populate the total price with the accurate pricing of all the products
+  * Clicking complete order button will start the order process and will complete the order
+
 * Checkout Success page:
-  * The checkout success page displays a confirmation that the order has been processed along with an order summary featuring key information 
+  * This page displays a confirmation message that the order has been processed with what has been ordered and all other relevant information
   * An email is sent to users confirming their order has been successfully processed
 
 
 ### User Testing
-REPORT...
-
-## Bugs 
+Various friends and family have tested my site out on different devices such as mobile phones, laptops and even desktop PC to allow a good thorough testing as them being the actual user of the site. 
 
 
 ## Credits
+### Code Sections/Tutorials
+* Footer was properly completed with [Matthew James Taylor's](https://matthewjamestaylor.com/bottom-footer#problem)
+* My wishlist and Review model was structured with the help from a mixture of [You Tube](https://youtube.com) and [Chatgpt](https://chatgpt.com). I used a mixture of the 2 to help build the bases of the wishlist and  had to tweak certain areas to work and to also fit around my sites layout once completed
+
+### Media
+* Product images were taken from [Qogita Website](https://www.qogita.com)
+* The homepage main body image was just a random searched google image
+
+## Acknowledgements
+* I would like to thank the CI tutor Support team for continous help throughout this milestone. Without a tutor for around 3 months of this course did take it out of me but without them I would't have gotten anywhere with it.
+* Also thank you to everyone that helped me test the site and provide feedback that was needed for the site 
