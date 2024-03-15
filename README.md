@@ -185,7 +185,7 @@ AWS
 11. Copy the code displayed to your clipboard and paste this into the Bucket Policy editor. Before saving add a '/*' to the end of the Resource key, then click 'Save'
 12. Navigate to the 'Access Control List' tab, click 'edit' and enable List for Everyone (public access) and accept the warning box
 13. From the AWS site search for 'IAM', click 'User Groups' and then click 'Create New Group'
-14. Name this group something that makes sense for the logic of your project, I named this 'manage-second-hand-shelf', then click 'Create Group'
+14. Name this group something that makes sense for the logic of your project, I named this 'manage-salon-wholesale', then click 'Create Group'
 15. From the IAM dashboard click 'Policies' then 'Create Policy'
 16. Click the 'JSON' tab and select 'import policy', search for 'S3' and import the 'AmazonS3FullAccess' policy
 17. Find your arn from the Bucket Policy page in S3 and copy it, paste this into the 'Resource' key in the JSON tab instead of the '*' value. The format should be
@@ -193,12 +193,12 @@ AWS
     'your_arn_here',
     'your_arn_here/*'
 ]
-18. Click 'Review Policy', and give it a name and description, e.g name: second-hand-shelf-policy, description: Access to S3 bucket for Second Hand Shelf static files
+18. Click 'Review Policy', and give it a name and description
 19. Click 'Create Policy'
 20. Navigate back to the 'User Groups' page and click on the group you created
 21. Click 'Attach Policy', search for the policy you just created and select it, then click 'Attach Policy'
 22. Finally navigate to the 'Users' page and click 'Add User'
-23. Create a user named 'your-site-name-staticfiles-user', my username was 'second-hand-shelf-staticfiles-user', click 'Next' then select the group we created earlier and click 'Next' again and 'Create User' to add your user to this group
+23. Create a user named 'your-site-name-staticfiles-user', click 'Next' then select the group we created earlier and click 'Next' again and 'Create User' to add your user to this group
 24. In the Identity and Access Management tab click on Users, and click on the username of the user you just created
 25. Click the 'security credentials' tab, scroll down to 'access keys' and click 'create access key'
 26. On the 'Access key best practices & alternatives' page click 'Other' as our use case, follow this process to the end and click the 'download .csv' button
@@ -254,7 +254,7 @@ Stripe:
 
 1. Your deployed site should now appear and function the same way as your development site with all static and media files loading and displaying appropriately
 
-How to Fork the Second Hand Shelf
+How to Fork the Salon_wholesale
 1. Login to your GitHub account
 2. Navigate to the 'salon_wholesale' repository and click the 'Fork' button in the top right corner
 
